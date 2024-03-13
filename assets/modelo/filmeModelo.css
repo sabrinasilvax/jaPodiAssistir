@@ -1,88 +1,125 @@
-.detalhesFilmeModelo {
-  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
-}
 body {
   background-color: black;
   color: white;
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
 }
+
 .filmeModelo {
-  margin: 35px;
+  margin: 2rem;
   display: grid;
-  grid-template-columns: 1fr 1.8fr;
-  max-width: 1000px;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  max-width: 100rem;
 }
+
 .filmeModelo img {
   object-fit: contain;
-  width: 300px;
-  height: 100%;
-}
-.detalhesFilme {
-  padding-left: 0px;
+  width: 100%;
+  max-height: 50rem;
 }
 .tituloFilme {
   font-weight: bold;
-  font-size: 50px;
-  padding: 10px;
-  padding-left: 0px;
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  text-align: left;
+}
+span {
+  vertical-align: middle;
 }
 .iconesFilme {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  padding-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  padding-bottom: 1rem;
 }
-.anoLancamento {
-  position: absolute;
-  padding: 5px;
-}
-.tempoDuracao {
-  position: absolute;
-  padding: 5px;
-}
-.diretorElenco {
-  padding-bottom: 10px;
-}
-.diretorBold {
-  font-weight: bold;
-}
-.elencoBold {
-  font-weight: bold;
-}
+
 .buttonFilme {
   background-color: blueviolet;
-  opacity: 0.2;
-  width: 60px;
-  height: 25px;
-  border-radius: 15px;
-  margin-bottom: 10px;
+  width: 5rem;
+  height: 1rem;
+  border-radius: 1rem;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
+
 .botaoFilme {
   color: white;
   opacity: 1;
-  padding: 5px;
-  padding-left: 10px;
 }
+
 .favoritar {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  display: flex;
+  justify-content: space-between;
 }
+
 .sessaoComentarios {
   display: grid;
-  grid-template-columns: 1.5fr 1fr;
-  margin: 15px;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  margin-top: 1rem;
 }
+
 .comentarios {
-  font-size: 30px;
-  padding-bottom: 10px;
+  font-size: 2rem;
+  padding-bottom: 1rem;
 }
+
 .avisoEntreNaConta {
   color: red;
-  padding: 20px;
-  padding-left: 0px;
+  margin-bottom: 1rem;
 }
-.caixaComentario {
-  width: 500px;
-  height: 100px;
-  opacity: 0.1;
-  border-radius: 15px;
+
+#caixaComentario {
+  background-color: black;
+  width: 100%;
+  height: 10rem;
+  border-radius: 1rem;
   color: white;
+  text-align: start;
+}
+.botaoComentar {
+  text-align: right;
+}
+.botaoComentar button {
+  color: white;
+  background-color: black;
+  height: 2rem;
+  border: none;
+}
+.naoHaComentarios {
+  opacity: 50%;
+}
+.estrelas:hover,
+.material-symbols-outlined.warning:hover {
+  color: yellow;
+  transition: 0.5s;
+  opacity: 50;
+}
+
+.material-symbols-outlined.favorite:hover {
+  color: red;
+  transition: 0.5s;
+  opacity: 50;
+}
+
+@media screen and (min-width: 600px) {
+  .filmeModelo {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .iconesFilme {
+    flex-direction: column;
+    align-items: left;
+  }
+
+  .iconesFilme > * {
+    margin-bottom: 0.5rem;
+  }
 }

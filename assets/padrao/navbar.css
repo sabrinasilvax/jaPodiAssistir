@@ -48,21 +48,19 @@ a:hover {
   transition: color 0.2s;
 }
 main {
-  padding: 0 2rem;
+  padding: 3rem 2rem;
   max-width: 2000px;
   font-size: 1rem;
   font-weight: 500;
   margin: 0 auto;
-
-  display: grid;
-  grid-template-columns: 1fr 1fr;
 }
 #navbar a img {
+  min-height: 60px;
   width: 30%;
   max-width: 100%;
   height: auto;
   margin: 0 auto;
-  object-fit: cover;
+  object-fit: contain;
 }
 #rodape {
   display: grid;
