@@ -1,0 +1,125 @@
+body {
+  background-color: black;
+  color: white;
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+}
+
+.filmeModelo {
+  margin: 2rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  max-width: 100rem;
+}
+
+.filmeModelo img {
+  object-fit: contain;
+  width: 100%;
+  max-height: 50rem;
+}
+.tituloFilme {
+  font-weight: bold;
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  text-align: left;
+}
+span {
+  vertical-align: middle;
+}
+.iconesFilme {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  padding-bottom: 1rem;
+}
+
+.buttonFilme {
+  background-color: blueviolet;
+  width: 5rem;
+  height: 1rem;
+  border-radius: 1rem;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.botaoFilme {
+  color: white;
+  opacity: 1;
+}
+
+.favoritar {
+  display: flex;
+  justify-content: space-between;
+}
+
+.sessaoComentarios {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.comentarios {
+  font-size: 2rem;
+  padding-bottom: 1rem;
+}
+
+.avisoEntreNaConta {
+  color: red;
+  margin-bottom: 1rem;
+}
+
+#caixaComentario {
+  background-color: black;
+  width: 100%;
+  height: 2.5rem;
+  border-radius: 1rem;
+  color: white;
+  text-align: start;
+}
+.botaoComentar {
+  text-align: right;
+}
+.botaoComentar button {
+  color: white;
+  height: 2rem;
+  border: none;
+  background-color: rgba(0, 0, 0, 0);
+}
+.naoHaComentarios {
+  opacity: 50%;
+}
+.estrelas:hover,
+.material-symbols-outlined.warning:hover {
+  color: yellow;
+  transition: 0.5s;
+  opacity: 50;
+}
+
+.material-symbols-outlined.favorite:hover {
+  color: red;
+  transition: 0.5s;
+  opacity: 50;
+}
+
+@media screen and (min-width: 600px) {
+  .filmeModelo {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .iconesFilme {
+    flex-direction: column;
+    align-items: left;
+  }
+
+  .iconesFilme > * {
+    margin-bottom: 0.5rem;
+  }
+}

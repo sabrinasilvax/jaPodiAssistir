@@ -1,0 +1,23 @@
+#grid_filmes {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+  padding: 0px 50px 50px 50px;
+  justify-items: center;
+}
+
+.filmes {
+  text-align: center;
+  margin: 70px 30px 30px 30px;
+}
+
+.imagem {
+  max-width: 100%;
+  width: 200px;
+  height: auto;
+}
+
+.detalhes {
+  display: grid;
+  margin: 0px;
+}
